@@ -1,0 +1,240 @@
+@import "compass/css3";
+@import "setup";
+@import "mixins";
+
+
+// ******************************* HEADER **********************************
+header {
+@include headerStyle;
+}
+
+
+// ******************************* NOCIMA **********************************
+
+#nocima{
+  background:#111111;
+ 
+  .content{
+    width:36rem;
+    height:35rem;
+    margin-top:17rem;
+    margin-left:12.4rem;
+    padding-right:2rem;
+    & h1{
+      font-size:4rem;
+      font-weight:300;
+      line-height:4rem;
+      text-transform:uppercase;
+      }
+
+      & h3{
+        font-weight:300;
+        font-size:2rem;
+      }
+    }
+
+   .heroImg{
+      @include imgPosition;
+    }
+
+    .arrow{
+      @include arrow;
+    }
+}
+
+// ******************************* NEW **********************************
+
+#new{
+  background:#2c2c2c;
+ 
+  .newContent{
+    margin-top:10rem;
+    margin-left:12.4rem;
+    width:35rem;
+    height:28rem;
+
+    & h2{
+      margin-bottom:2.5rem;
+    }   
+  }
+  .newImg{
+      @include imgPosition;
+    
+  }
+}
+ 
+// ******************************* ABOUT US **********************************
+
+ #aboutUs{
+  background:#111111;
+
+  .about{
+    width:36rem;
+    height:20rem;
+    margin-left:12.4rem;
+    margin-top:10rem;
+
+    & p:last-child{
+      margin-top:3rem;
+    }
+  }
+
+  .faq{
+    margin-left:12rem;
+    margin-top:-3rem;
+    width:36rem;
+    height:20rem;
+
+    & h3{
+      margin-bottom:-0.8rem;
+      font-weight:300;
+      font-size:1.7rem;
+    }
+
+    & p:nth-child(4){
+      margin-top:1.5rem;
+      opacity: 1;
+    }
+
+    & p:last-child{
+      margin-top:-0.8rem;
+    }
+  }
+
+  .aboutImg{
+      @include imgPosition;
+  }
+}
+
+
+// ******************************* CONTACT **********************************
+
+#contact{
+  background:#2c2c2c;
+
+  .form{
+    width:30rem;
+    height:35rem;
+    margin-top:10rem;
+    margin-left:12.4rem;
+
+    input, textarea {
+      display:block;
+      width:30rem;
+      height:3rem;
+      font-size:1.2rem;
+      background:transparent;
+      border:none;
+      border-bottom:1px solid #ffffff;
+    }
+
+    textarea{
+      height:6rem;
+    }
+
+   .scroll::-webkit-scrollbar {
+   display: none;
+   }
+
+    & button{
+      @include button;
+    }
+
+    form{
+      padding-top:2rem;
+    }
+  }
+  .contactImg{
+      @include imgPosition;
+
+  }
+}
+
+// ******************************* FOOTER **********************************
+
+#footer{
+  background:#111111;
+
+  .footer{
+    width:30rem;
+    height:35rem;
+    margin-top:14rem;
+    margin-left:12.4rem;
+
+    & h1{
+      margin-bottom: 6rem;
+      font-size:4rem;
+      font-weight:300;
+     
+    }
+
+    .social-box:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -0.25em; 
+    }
+
+    & .social-box {
+      display: inline-block;
+      width: 3.5em;
+      height: 3.5em;
+      border-radius:50%;
+      margin-right: 1em;
+      border:1px solid #adadad;
+      text-align: center;
+
+      & a {  
+        color: #adadad;
+        font-size: 1.2em;
+        margin: auto;
+        text-align: center;
+        vertical-align: middle;
+      }
+    }
+    .support{
+      display:block;
+      margin-top:5.8rem;
+      color:#adadad;
+
+      &:hover{
+        color: #dadada;
+      }
+    }
+  }
+
+  .footerImg{
+    @include imgPosition;
+  }
+}
+
+
+// ******************************* PRIVACY and TERMS OF USE **********************************
+
+#privacy, #termsOfUse{
+  width:100%;
+  background:#111111;
+  overflow: hidden;
+
+  .privacyPage, .termsOfUsePage{
+    width:40rem;
+    margin:15rem 0 2rem 12.4rem;
+
+    & h2{
+      margin-bottom:1rem;
+    }
+
+    & h3{
+      font-weight:300;
+      font-size:1.8rem;
+      margin-bottom:-0.2rem;
+    }
+
+    & p {
+      line-height:1.36rem;
+    }
+  }
+}
+
+

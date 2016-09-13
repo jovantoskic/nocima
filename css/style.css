@@ -1,0 +1,397 @@
+/* line 9, ../scss/setup.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', arial, sans-serif;
+  color: #ffffff;
+}
+/* line 14, ../scss/setup.scss */
+body a {
+  text-decoration: none;
+}
+/* line 18, ../scss/setup.scss */
+body h2 {
+  font-weight: 300;
+  font-size: 2.4rem;
+}
+/* line 23, ../scss/setup.scss */
+body p {
+  font-family: Merriweather, serif;
+  font-size: 0.97rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  opacity: .6;
+}
+/* line 31, ../scss/setup.scss */
+body input, body textarea {
+  font-family: 'Raleway', arial, sans-serif;
+  opacity: .6;
+  color: #adadad;
+}
+/* line 37, ../scss/setup.scss */
+body #nocima, body #new, body #aboutUs, body #contact, body #footer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+/* line 44, ../scss/setup.scss */
+body ul {
+  margin: -0.6rem 0 -0.6rem 0;
+}
+/* line 48, ../scss/setup.scss */
+body li {
+  margin-top: 0.2rem;
+  font-family: Merriweather, serif;
+  font-weight: 300;
+  opacity: .6;
+}
+
+/* line 7, ../scss/style.scss */
+header {
+  width: 100%;
+  height: 6.2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #111111;
+  z-index: 999;
+}
+/* line 10, ../scss/_mixins.scss */
+header nav {
+  padding-left: 17rem;
+  padding-top: 3rem;
+}
+/* line 14, ../scss/_mixins.scss */
+header nav .logo {
+  position: absolute;
+  top: 1.7rem;
+  left: 12%;
+  width: 5rem;
+  height: 5rem;
+  background: url(../img/logo.png) 0 0 no-repeat;
+  text-indent: -9999px;
+}
+/* line 24, ../scss/_mixins.scss */
+header nav ul {
+  padding: 0;
+  margin: 0;
+  margin-left: -1rem;
+  list-style-type: none;
+}
+/* line 30, ../scss/_mixins.scss */
+header nav ul li {
+  display: inline-block;
+  padding-left: 2.5rem;
+  line-height: 1rem;
+}
+/* line 35, ../scss/_mixins.scss */
+header nav ul li a {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+/* line 39, ../scss/_mixins.scss */
+header nav ul li a:hover {
+  opacity: .6;
+}
+
+/* line 14, ../scss/style.scss */
+#nocima {
+  background: #111111;
+}
+/* line 17, ../scss/style.scss */
+#nocima .content {
+  width: 36rem;
+  height: 35rem;
+  margin-top: 17rem;
+  margin-left: 12.4rem;
+  padding-right: 2rem;
+}
+/* line 23, ../scss/style.scss */
+#nocima .content h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+/* line 30, ../scss/style.scss */
+#nocima .content h3 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+/* line 36, ../scss/style.scss */
+#nocima .heroImg {
+  position: absolute;
+  top: 22.9rem;
+  left: 60rem;
+}
+/* line 40, ../scss/style.scss */
+#nocima .arrow {
+  -moz-animation: bounce 2.5s infinite;
+  -webkit-animation: bounce 2.5s infinite;
+  animation: bounce 2.5s infinite;
+  position: absolute;
+  top: 55rem;
+  left: 49.22rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  background: url(../img/arrowDown.png) 0 0 no-repeat;
+  background-size: contain;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+/* line 47, ../scss/style.scss */
+#new {
+  background: #2c2c2c;
+}
+/* line 50, ../scss/style.scss */
+#new .newContent {
+  margin-top: 10rem;
+  margin-left: 12.4rem;
+  width: 35rem;
+  height: 28rem;
+}
+/* line 56, ../scss/style.scss */
+#new .newContent h2 {
+  margin-bottom: 2.5rem;
+}
+/* line 60, ../scss/style.scss */
+#new .newImg {
+  position: absolute;
+  top: 22.9rem;
+  left: 60rem;
+}
+
+/* line 68, ../scss/style.scss */
+#aboutUs {
+  background: #111111;
+}
+/* line 71, ../scss/style.scss */
+#aboutUs .about {
+  width: 36rem;
+  height: 20rem;
+  margin-left: 12.4rem;
+  margin-top: 10rem;
+}
+/* line 77, ../scss/style.scss */
+#aboutUs .about p:last-child {
+  margin-top: 3rem;
+}
+/* line 82, ../scss/style.scss */
+#aboutUs .faq {
+  margin-left: 12rem;
+  margin-top: -3rem;
+  width: 36rem;
+  height: 20rem;
+}
+/* line 88, ../scss/style.scss */
+#aboutUs .faq h3 {
+  margin-bottom: -0.8rem;
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+/* line 94, ../scss/style.scss */
+#aboutUs .faq p:nth-child(4) {
+  margin-top: 1.5rem;
+  opacity: 1;
+}
+/* line 99, ../scss/style.scss */
+#aboutUs .faq p:last-child {
+  margin-top: -0.8rem;
+}
+/* line 104, ../scss/style.scss */
+#aboutUs .aboutImg {
+  position: absolute;
+  top: 22.9rem;
+  left: 60rem;
+}
+
+/* line 112, ../scss/style.scss */
+#contact {
+  background: #2c2c2c;
+}
+/* line 115, ../scss/style.scss */
+#contact .form {
+  width: 30rem;
+  height: 35rem;
+  margin-top: 10rem;
+  margin-left: 12.4rem;
+}
+/* line 121, ../scss/style.scss */
+#contact .form input, #contact .form textarea {
+  display: block;
+  width: 30rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+/* line 131, ../scss/style.scss */
+#contact .form textarea {
+  height: 6rem;
+}
+/* line 135, ../scss/style.scss */
+#contact .form .scroll::-webkit-scrollbar {
+  display: none;
+}
+/* line 139, ../scss/style.scss */
+#contact .form button {
+  width: 15rem;
+  height: 2.8rem;
+  margin-top: 2rem;
+  background: #3d91f4;
+  color: #ffffff;
+  border: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 94, ../scss/_mixins.scss */
+#contact .form button:hover {
+  opacity: .9;
+  cursor: pointer;
+}
+/* line 143, ../scss/style.scss */
+#contact .form form {
+  padding-top: 2rem;
+}
+/* line 147, ../scss/style.scss */
+#contact .contactImg {
+  position: absolute;
+  top: 22.9rem;
+  left: 60rem;
+}
+
+/* line 155, ../scss/style.scss */
+#footer {
+  background: #111111;
+}
+/* line 158, ../scss/style.scss */
+#footer .footer {
+  width: 30rem;
+  height: 35rem;
+  margin-top: 14rem;
+  margin-left: 12.4rem;
+}
+/* line 164, ../scss/style.scss */
+#footer .footer h1 {
+  margin-bottom: 6rem;
+  font-size: 4rem;
+  font-weight: 300;
+}
+/* line 171, ../scss/style.scss */
+#footer .footer .social-box:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+/* line 179, ../scss/style.scss */
+#footer .footer .social-box {
+  display: inline-block;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  margin-right: 1em;
+  border: 1px solid #adadad;
+  text-align: center;
+}
+/* line 188, ../scss/style.scss */
+#footer .footer .social-box a {
+  color: #adadad;
+  font-size: 1.2em;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 196, ../scss/style.scss */
+#footer .footer .support {
+  display: block;
+  margin-top: 5.8rem;
+  color: #adadad;
+}
+/* line 201, ../scss/style.scss */
+#footer .footer .support:hover {
+  color: #dadada;
+}
+/* line 207, ../scss/style.scss */
+#footer .footerImg {
+  position: absolute;
+  top: 22.9rem;
+  left: 60rem;
+}
+
+/* line 215, ../scss/style.scss */
+#privacy, #termsOfUse {
+  width: 100%;
+  background: #111111;
+  overflow: hidden;
+}
+/* line 220, ../scss/style.scss */
+#privacy .privacyPage, #privacy .termsOfUsePage, #termsOfUse .privacyPage, #termsOfUse .termsOfUsePage {
+  width: 40rem;
+  margin: 15rem 0 2rem 12.4rem;
+}
+/* line 224, ../scss/style.scss */
+#privacy .privacyPage h2, #privacy .termsOfUsePage h2, #termsOfUse .privacyPage h2, #termsOfUse .termsOfUsePage h2 {
+  margin-bottom: 1rem;
+}
+/* line 228, ../scss/style.scss */
+#privacy .privacyPage h3, #privacy .termsOfUsePage h3, #termsOfUse .privacyPage h3, #termsOfUse .termsOfUsePage h3 {
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin-bottom: -0.2rem;
+}
+/* line 234, ../scss/style.scss */
+#privacy .privacyPage p, #privacy .termsOfUsePage p, #termsOfUse .privacyPage p, #termsOfUse .termsOfUsePage p {
+  line-height: 1.36rem;
+}
