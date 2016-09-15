@@ -1,4 +1,9 @@
 $(document).ready(function(){
+	$('section').height(window.innerHeight);
+	//$('section').width(window.innerWidth);
+
+
+
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
 

@@ -11,28 +11,38 @@ header {
 
 // ******************************* NOCIMA **********************************
 
-#nocima{
-  background:#111111;
+#nocima {
+  position:relative;
+  background:url(../img/nocima.jpg) 0 0 no-repeat;  
+  background-size:cover;
+
+  .contentWrapper{
+      position:absolute;
+      background-color: rgba(0,0,0, 0.6);
+      height:100vh;
+      width:100%;
+      
+      .content {
+        width:38rem;
+        height:35rem;
+        margin-top:20rem;
+        margin-left:7.2rem;
+        padding-right:2rem;
+        & h1{
+          margin-bottom:1rem;
+          font-size:5rem;
+          font-weight:300;
+          line-height:5rem;
+          text-transform:uppercase;
+        }
+
+        & h3{
+          font-weight:300;
+          font-size:2.1rem;
+        }
+      }
+  }
  
-  .content{
-    width:36rem;
-    height:35rem;
-    margin-top:17rem;
-    margin-left:12.4rem;
-    padding-right:2rem;
-    & h1{
-      font-size:4rem;
-      font-weight:300;
-      line-height:4rem;
-      text-transform:uppercase;
-      }
-
-      & h3{
-        font-weight:300;
-        font-size:2rem;
-      }
-    }
-
    .heroImg{
       @include imgPosition;
     }
@@ -44,12 +54,39 @@ header {
 
 // ******************************* NEW **********************************
 
-#new{
+#new {
+  position:relative;
+  background:url(../img/new.jpg) 0 0 no-repeat;  
+  background-size:cover;
+  
+  .newWrapper{
+      position:absolute;
+      background-color: rgba(30,7,52, 0.74);
+      width:100%;
+      height:100vh;
+    
+    .newContent{
+      margin-top:17rem;
+      margin-left:7.2rem;
+      width:35rem;
+      height:28rem;
+
+      & h2{
+        margin-bottom:2.5rem;
+      }   
+    }
+  }
+
+}
+
+// ******************************* ABOUT US **********************************
+
+#map{
   background:#2c2c2c;
  
-  .newContent{
-    margin-top:10rem;
-    margin-left:12.4rem;
+  .mapContent{
+    margin-top:17rem;
+    margin-left:7.2rem;
     width:35rem;
     height:28rem;
 
@@ -57,155 +94,195 @@ header {
       margin-bottom:2.5rem;
     }   
   }
-  .newImg{
-      @include imgPosition;
-    
-  }
 }
  
 // ******************************* ABOUT US **********************************
 
  #aboutUs{
-  background:#111111;
+  position:relative;
+  background:url(../img/aboutUs.png) 0 0 no-repeat;  
+  background-size:cover;
+    
+    .aboutFaqWrapper{
+      position:absolute;
+      background-color: rgba(0,0,0, 0.8);
+      width:100%;
+      height:100vh;
 
-  .about{
-    width:36rem;
-    height:20rem;
-    margin-left:12.4rem;
-    margin-top:10rem;
+      .about{
+        width:36rem;
+        height:20rem;
+        margin-left:7.2rem;
+        margin-top:17rem;
 
-    & p:last-child{
-      margin-top:3rem;
+        & p:last-child{
+          margin-top:3rem;
+        }
+      }
+
+      .faq {
+        margin-left:7.2rem;
+        margin-top:-3rem;
+        width:36rem;
+        height:20rem;
+
+        & h3{
+          margin-bottom:-0.8rem;
+          font-weight:300;
+          font-size:1.7rem;
+        }
+
+        & p:nth-child(4){
+          margin-top:1.5rem;
+          opacity: 1;
+        }
+
+        & p:last-child {
+          margin-top:-0.8rem;
+        }
+      }
     }
   }
-
-  .faq{
-    margin-left:12rem;
-    margin-top:-3rem;
-    width:36rem;
-    height:20rem;
-
-    & h3{
-      margin-bottom:-0.8rem;
-      font-weight:300;
-      font-size:1.7rem;
-    }
-
-    & p:nth-child(4){
-      margin-top:1.5rem;
-      opacity: 1;
-    }
-
-    & p:last-child{
-      margin-top:-0.8rem;
-    }
-  }
-
-  .aboutImg{
-      @include imgPosition;
-  }
-}
 
 
 // ******************************* CONTACT **********************************
 
 #contact{
-  background:#2c2c2c;
+  position:relative;
+  background:url(../img/aboutUs.png) 0 0 no-repeat;  
+  background-size:cover;
+  
+  .formWrapper{
+    position:absolute;
+    background-color: rgba(0,0,0, 0.8);
+    width:100%;
+    height:100vh;
 
-  .form{
-    width:30rem;
-    height:35rem;
-    margin-top:10rem;
-    margin-left:12.4rem;
-
-    input, textarea {
-      display:block;
+    .form{
       width:30rem;
-      height:3rem;
-      font-size:1.2rem;
-      background:transparent;
-      border:none;
-      border-bottom:1px solid #ffffff;
+      height:35rem;
+      margin-top:17rem;
+      margin-left:7.2rem;
+
+      input, textarea {
+        display:block;
+        margin-top:1rem;
+        width:30rem;
+        height:2.8rem;
+        font-size:1.2rem;
+        background:transparent;
+        border:none;
+        border-bottom:1px solid rgba(255,255,255, 0.5);
+        outline:none;
+        color:#fff;
+        opacity:0.5;
+      }
+
+      textarea{
+        height:6rem;
+        width:35rem;
+      }
+
+      .scroll::-webkit-scrollbar {
+        display: none;
+      }
+
+      & button{
+        @include button;
+      }
+
+      form{
+        padding-top:1rem;
+      }
     }
-
-    textarea{
-      height:6rem;
-    }
-
-   .scroll::-webkit-scrollbar {
-   display: none;
-   }
-
-    & button{
-      @include button;
-    }
-
-    form{
-      padding-top:2rem;
-    }
-  }
-  .contactImg{
-      @include imgPosition;
-
   }
 }
 
 // ******************************* FOOTER **********************************
 
 #footer{
-  background:#111111;
+  position:relative;
+  background:url(../img/new.jpg) 0 0 no-repeat;  
+  background-size:cover;
 
-  .footer{
-    width:30rem;
-    height:35rem;
-    margin-top:14rem;
-    margin-left:12.4rem;
+  .footerWrapper{
+    position:absolute;
+    background-color: rgba(0,62,70, 0.74);
+    width:100%;
+    height:100vh;
+    
+    .footer {
+      width:30rem;
+      height:35rem;
+      margin-top:17rem;
+      margin-left:7.2rem;
 
-    & h1{
-      margin-bottom: 6rem;
-      font-size:4rem;
-      font-weight:300;
+      & h1{
+        margin-bottom: 6rem;
+        font-size:4rem;
+        font-weight:300;
      
-    }
+      }
 
-    .social-box:before {
-      content: '';
-      display: inline-block;
-      height: 100%;
-      vertical-align: middle;
-      margin-right: -0.25em; 
-    }
-
-    & .social-box {
-      display: inline-block;
-      width: 3.5em;
-      height: 3.5em;
-      border-radius:50%;
-      margin-right: 1em;
-      border:1px solid #adadad;
-      text-align: center;
-
-      & a {  
-        color: #adadad;
-        font-size: 1.2em;
-        margin: auto;
-        text-align: center;
+      .social-box:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
         vertical-align: middle;
+        margin-right: -0.25em; 
+      }
+
+      & .social-box {
+        display: inline-block;
+        width: 3.5em;
+        height: 3.5em;
+        border-radius:50%;
+        margin-right: 1.5em;
+        border:1px solid #adadad;
+        text-align: center;
+
+        & a {  
+          color: #adadad;
+          font-size: 1.2em;
+          margin: auto;
+          text-align: center;
+          vertical-align: middle;
+
+          & i:hover{
+            color:#fff;
+          }
+        }
+      }
+
+      .faColor:hover{
+        background-color:rgb(58, 90, 152);
+        border:2px solid #fff;
+      }
+
+      .twColor:hover{
+        background-color:rgb(66, 192, 251);
+        border:2px solid #fff;
+      }
+
+      .gogColor:hover{
+        background-color:rgb(217, 82, 50);
+        border:2px solid #fff;
+      }
+
+      .insColor:hover{
+        background-color:rgb(81, 127, 166);
+        border:2px solid #fff;
+      }
+      .support{
+        display:block;
+        margin-top:5.8rem;
+        color:#adadad;
+
+        &:hover{
+         color: #dadada;
+        }
       }
     }
-    .support{
-      display:block;
-      margin-top:5.8rem;
-      color:#adadad;
-
-      &:hover{
-        color: #dadada;
-      }
-    }
-  }
-
-  .footerImg{
-    @include imgPosition;
   }
 }
 
@@ -219,10 +296,11 @@ header {
 
   .privacyPage, .termsOfUsePage{
     width:40rem;
-    margin:15rem 0 2rem 12.4rem;
+    margin:15rem 0 2rem 7.2rem;
 
     & h2{
       margin-bottom:1rem;
+      font-weight:300;
     }
 
     & h3{

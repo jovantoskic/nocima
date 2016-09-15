@@ -1,74 +1,70 @@
-/* line 9, ../scss/setup.scss */
-body {
+/* line 5, ../scss/setup.scss */
+html {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', arial, sans-serif;
+}
+/* line 10, ../scss/setup.scss */
+html body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
   color: #ffffff;
 }
-/* line 14, ../scss/setup.scss */
-body a {
+/* line 16, ../scss/setup.scss */
+html body a {
   text-decoration: none;
 }
-/* line 18, ../scss/setup.scss */
-body h2 {
+/* line 22, ../scss/setup.scss */
+html body h2 {
   font-weight: 300;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
 }
-/* line 23, ../scss/setup.scss */
-body p {
-  font-family: Merriweather, serif;
-  font-size: 0.97rem;
-  font-weight: 300;
+/* line 27, ../scss/setup.scss */
+html body p {
+  font-size: 0.99rem;
   line-height: 1.5rem;
-  opacity: .6;
 }
-/* line 31, ../scss/setup.scss */
-body input, body textarea {
-  font-family: 'Raleway', arial, sans-serif;
-  opacity: .6;
-  color: #adadad;
+/* line 32, ../scss/setup.scss */
+html body input, html body textarea {
+  font-family: 'Open Sans', sans-serif;
 }
-/* line 37, ../scss/setup.scss */
-body #nocima, body #new, body #aboutUs, body #contact, body #footer {
-  position: relative;
+/* line 39, ../scss/setup.scss */
+html body #nocima, html body #new, html body #map, html body #aboutUs, html body #contact, html body #footer {
   width: 100%;
   height: 100vh;
   overflow: hidden;
 }
-/* line 44, ../scss/setup.scss */
-body ul {
+/* line 46, ../scss/setup.scss */
+html body ul {
   margin: -0.6rem 0 -0.6rem 0;
 }
-/* line 48, ../scss/setup.scss */
-body li {
+/* line 50, ../scss/setup.scss */
+html body li {
   margin-top: 0.2rem;
-  font-family: Merriweather, serif;
-  font-weight: 300;
-  opacity: .6;
 }
 
 /* line 7, ../scss/style.scss */
 header {
   width: 100%;
-  height: 6.2rem;
+  height: 8.2rem;
   position: fixed;
   top: 0;
   left: 0;
-  background: #111111;
+  background: transparent;
   z-index: 999;
 }
 /* line 10, ../scss/_mixins.scss */
 header nav {
   padding-left: 17rem;
-  padding-top: 3rem;
+  padding-top: 4.3rem;
 }
 /* line 14, ../scss/_mixins.scss */
 header nav .logo {
   position: absolute;
   top: 1.7rem;
-  left: 12%;
-  width: 5rem;
-  height: 5rem;
+  left: 7%;
+  width: 7rem;
+  height: 7rem;
   background: url(../img/logo.png) 0 0 no-repeat;
   text-indent: -9999px;
 }
@@ -82,51 +78,63 @@ header nav ul {
 /* line 30, ../scss/_mixins.scss */
 header nav ul li {
   display: inline-block;
-  padding-left: 2.5rem;
   line-height: 1rem;
 }
-/* line 35, ../scss/_mixins.scss */
+/* line 34, ../scss/_mixins.scss */
 header nav ul li a {
+  padding: 1rem;
   font-size: 1.1rem;
   font-weight: 400;
-  color: #ffffff;
+  color: #fff;
 }
-/* line 39, ../scss/_mixins.scss */
+/* line 41, ../scss/_mixins.scss */
 header nav ul li a:hover {
-  opacity: .6;
+  opacity: 0.9;
 }
 
 /* line 14, ../scss/style.scss */
 #nocima {
-  background: #111111;
+  position: relative;
+  background: url(../img/nocima.jpg) 0 0 no-repeat;
+  background-size: cover;
 }
-/* line 17, ../scss/style.scss */
-#nocima .content {
-  width: 36rem;
+/* line 19, ../scss/style.scss */
+#nocima .contentWrapper {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  width: 100%;
+}
+/* line 25, ../scss/style.scss */
+#nocima .contentWrapper .content {
+  width: 38rem;
   height: 35rem;
-  margin-top: 17rem;
-  margin-left: 12.4rem;
+  margin-top: 20rem;
+  margin-left: 7.2rem;
   padding-right: 2rem;
 }
-/* line 23, ../scss/style.scss */
-#nocima .content h1 {
-  font-size: 4rem;
+/* line 31, ../scss/style.scss */
+#nocima .contentWrapper .content h1 {
+  margin-bottom: 1rem;
+  font-size: 5rem;
   font-weight: 300;
-  line-height: 4rem;
+  line-height: 5rem;
   text-transform: uppercase;
 }
-/* line 30, ../scss/style.scss */
-#nocima .content h3 {
+/* line 39, ../scss/style.scss */
+#nocima .contentWrapper .content h3 {
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 2.1rem;
 }
-/* line 36, ../scss/style.scss */
+/* line 46, ../scss/style.scss */
 #nocima .heroImg {
-  position: absolute;
-  top: 22.9rem;
+  position: fixed;
+  top: 10.9rem;
   left: 60rem;
+  width: 38%;
+  z-index: 9999999999999;
 }
-/* line 40, ../scss/style.scss */
+/* line 50, ../scss/style.scss */
 #nocima .arrow {
   -moz-animation: bounce 2.5s infinite;
   -webkit-animation: bounce 2.5s infinite;
@@ -187,106 +195,142 @@ header nav ul li a:hover {
     transform: translateY(-15px);
   }
 }
-/* line 47, ../scss/style.scss */
+/* line 57, ../scss/style.scss */
 #new {
-  background: #2c2c2c;
+  position: relative;
+  background: url(../img/new.jpg) 0 0 no-repeat;
+  background-size: cover;
 }
-/* line 50, ../scss/style.scss */
-#new .newContent {
-  margin-top: 10rem;
-  margin-left: 12.4rem;
+/* line 62, ../scss/style.scss */
+#new .newWrapper {
+  position: absolute;
+  background-color: rgba(30, 7, 52, 0.74);
+  width: 100%;
+  height: 100vh;
+}
+/* line 68, ../scss/style.scss */
+#new .newWrapper .newContent {
+  margin-top: 17rem;
+  margin-left: 7.2rem;
   width: 35rem;
   height: 28rem;
 }
-/* line 56, ../scss/style.scss */
-#new .newContent h2 {
+/* line 74, ../scss/style.scss */
+#new .newWrapper .newContent h2 {
   margin-bottom: 2.5rem;
 }
-/* line 60, ../scss/style.scss */
-#new .newImg {
-  position: absolute;
-  top: 22.9rem;
-  left: 60rem;
+
+/* line 84, ../scss/style.scss */
+#map {
+  background: #2c2c2c;
+}
+/* line 87, ../scss/style.scss */
+#map .mapContent {
+  margin-top: 17rem;
+  margin-left: 7.2rem;
+  width: 35rem;
+  height: 28rem;
+}
+/* line 93, ../scss/style.scss */
+#map .mapContent h2 {
+  margin-bottom: 2.5rem;
 }
 
-/* line 68, ../scss/style.scss */
+/* line 101, ../scss/style.scss */
 #aboutUs {
-  background: #111111;
+  position: relative;
+  background: url(../img/aboutUs.png) 0 0 no-repeat;
+  background-size: cover;
 }
-/* line 71, ../scss/style.scss */
-#aboutUs .about {
+/* line 106, ../scss/style.scss */
+#aboutUs .aboutFaqWrapper {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+}
+/* line 112, ../scss/style.scss */
+#aboutUs .aboutFaqWrapper .about {
   width: 36rem;
   height: 20rem;
-  margin-left: 12.4rem;
-  margin-top: 10rem;
+  margin-left: 7.2rem;
+  margin-top: 17rem;
 }
-/* line 77, ../scss/style.scss */
-#aboutUs .about p:last-child {
+/* line 118, ../scss/style.scss */
+#aboutUs .aboutFaqWrapper .about p:last-child {
   margin-top: 3rem;
 }
-/* line 82, ../scss/style.scss */
-#aboutUs .faq {
-  margin-left: 12rem;
+/* line 123, ../scss/style.scss */
+#aboutUs .aboutFaqWrapper .faq {
+  margin-left: 7.2rem;
   margin-top: -3rem;
   width: 36rem;
   height: 20rem;
 }
-/* line 88, ../scss/style.scss */
-#aboutUs .faq h3 {
+/* line 129, ../scss/style.scss */
+#aboutUs .aboutFaqWrapper .faq h3 {
   margin-bottom: -0.8rem;
   font-weight: 300;
   font-size: 1.7rem;
 }
-/* line 94, ../scss/style.scss */
-#aboutUs .faq p:nth-child(4) {
+/* line 135, ../scss/style.scss */
+#aboutUs .aboutFaqWrapper .faq p:nth-child(4) {
   margin-top: 1.5rem;
   opacity: 1;
 }
-/* line 99, ../scss/style.scss */
-#aboutUs .faq p:last-child {
+/* line 140, ../scss/style.scss */
+#aboutUs .aboutFaqWrapper .faq p:last-child {
   margin-top: -0.8rem;
 }
-/* line 104, ../scss/style.scss */
-#aboutUs .aboutImg {
-  position: absolute;
-  top: 22.9rem;
-  left: 60rem;
-}
 
-/* line 112, ../scss/style.scss */
+/* line 150, ../scss/style.scss */
 #contact {
-  background: #2c2c2c;
+  position: relative;
+  background: url(../img/aboutUs.png) 0 0 no-repeat;
+  background-size: cover;
 }
-/* line 115, ../scss/style.scss */
-#contact .form {
+/* line 155, ../scss/style.scss */
+#contact .formWrapper {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+}
+/* line 161, ../scss/style.scss */
+#contact .formWrapper .form {
   width: 30rem;
   height: 35rem;
-  margin-top: 10rem;
-  margin-left: 12.4rem;
+  margin-top: 17rem;
+  margin-left: 7.2rem;
 }
-/* line 121, ../scss/style.scss */
-#contact .form input, #contact .form textarea {
+/* line 167, ../scss/style.scss */
+#contact .formWrapper .form input, #contact .formWrapper .form textarea {
   display: block;
+  margin-top: 1rem;
   width: 30rem;
-  height: 3rem;
+  height: 2.8rem;
   font-size: 1.2rem;
   background: transparent;
   border: none;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  color: #fff;
+  opacity: 0.5;
 }
-/* line 131, ../scss/style.scss */
-#contact .form textarea {
+/* line 181, ../scss/style.scss */
+#contact .formWrapper .form textarea {
   height: 6rem;
+  width: 35rem;
 }
-/* line 135, ../scss/style.scss */
-#contact .form .scroll::-webkit-scrollbar {
+/* line 186, ../scss/style.scss */
+#contact .formWrapper .form .scroll::-webkit-scrollbar {
   display: none;
 }
-/* line 139, ../scss/style.scss */
-#contact .form button {
+/* line 190, ../scss/style.scss */
+#contact .formWrapper .form button {
   width: 15rem;
-  height: 2.8rem;
-  margin-top: 2rem;
+  height: 3.2rem;
+  margin-top: 3.2rem;
   background: #3d91f4;
   color: #ffffff;
   border: none;
@@ -294,104 +338,126 @@ header nav ul li a:hover {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 94, ../scss/_mixins.scss */
-#contact .form button:hover {
+/* line 98, ../scss/_mixins.scss */
+#contact .formWrapper .form button:hover {
   opacity: .9;
   cursor: pointer;
 }
-/* line 143, ../scss/style.scss */
-#contact .form form {
-  padding-top: 2rem;
-}
-/* line 147, ../scss/style.scss */
-#contact .contactImg {
-  position: absolute;
-  top: 22.9rem;
-  left: 60rem;
+/* line 194, ../scss/style.scss */
+#contact .formWrapper .form form {
+  padding-top: 1rem;
 }
 
-/* line 155, ../scss/style.scss */
+/* line 203, ../scss/style.scss */
 #footer {
-  background: #111111;
+  position: relative;
+  background: url(../img/new.jpg) 0 0 no-repeat;
+  background-size: cover;
 }
-/* line 158, ../scss/style.scss */
-#footer .footer {
+/* line 208, ../scss/style.scss */
+#footer .footerWrapper {
+  position: absolute;
+  background-color: rgba(0, 62, 70, 0.74);
+  width: 100%;
+  height: 100vh;
+}
+/* line 214, ../scss/style.scss */
+#footer .footerWrapper .footer {
   width: 30rem;
   height: 35rem;
-  margin-top: 14rem;
-  margin-left: 12.4rem;
+  margin-top: 17rem;
+  margin-left: 7.2rem;
 }
-/* line 164, ../scss/style.scss */
-#footer .footer h1 {
+/* line 220, ../scss/style.scss */
+#footer .footerWrapper .footer h1 {
   margin-bottom: 6rem;
   font-size: 4rem;
   font-weight: 300;
 }
-/* line 171, ../scss/style.scss */
-#footer .footer .social-box:before {
+/* line 227, ../scss/style.scss */
+#footer .footerWrapper .footer .social-box:before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
   margin-right: -0.25em;
 }
-/* line 179, ../scss/style.scss */
-#footer .footer .social-box {
+/* line 235, ../scss/style.scss */
+#footer .footerWrapper .footer .social-box {
   display: inline-block;
   width: 3.5em;
   height: 3.5em;
   border-radius: 50%;
-  margin-right: 1em;
+  margin-right: 1.5em;
   border: 1px solid #adadad;
   text-align: center;
 }
-/* line 188, ../scss/style.scss */
-#footer .footer .social-box a {
+/* line 244, ../scss/style.scss */
+#footer .footerWrapper .footer .social-box a {
   color: #adadad;
   font-size: 1.2em;
   margin: auto;
   text-align: center;
   vertical-align: middle;
 }
-/* line 196, ../scss/style.scss */
-#footer .footer .support {
+/* line 251, ../scss/style.scss */
+#footer .footerWrapper .footer .social-box a i:hover {
+  color: #fff;
+}
+/* line 257, ../scss/style.scss */
+#footer .footerWrapper .footer .faColor:hover {
+  background-color: #3a5a98;
+  border: 2px solid #fff;
+}
+/* line 262, ../scss/style.scss */
+#footer .footerWrapper .footer .twColor:hover {
+  background-color: #42c0fb;
+  border: 2px solid #fff;
+}
+/* line 267, ../scss/style.scss */
+#footer .footerWrapper .footer .gogColor:hover {
+  background-color: #d95232;
+  border: 2px solid #fff;
+}
+/* line 272, ../scss/style.scss */
+#footer .footerWrapper .footer .insColor:hover {
+  background-color: #517fa6;
+  border: 2px solid #fff;
+}
+/* line 276, ../scss/style.scss */
+#footer .footerWrapper .footer .support {
   display: block;
   margin-top: 5.8rem;
   color: #adadad;
 }
-/* line 201, ../scss/style.scss */
-#footer .footer .support:hover {
+/* line 281, ../scss/style.scss */
+#footer .footerWrapper .footer .support:hover {
   color: #dadada;
 }
-/* line 207, ../scss/style.scss */
-#footer .footerImg {
-  position: absolute;
-  top: 22.9rem;
-  left: 60rem;
-}
 
-/* line 215, ../scss/style.scss */
+/* line 292, ../scss/style.scss */
 #privacy, #termsOfUse {
   width: 100%;
   background: #111111;
   overflow: hidden;
 }
-/* line 220, ../scss/style.scss */
+/* line 297, ../scss/style.scss */
 #privacy .privacyPage, #privacy .termsOfUsePage, #termsOfUse .privacyPage, #termsOfUse .termsOfUsePage {
   width: 40rem;
-  margin: 15rem 0 2rem 12.4rem;
+  margin: 15rem 0 2rem 7.2rem;
 }
-/* line 224, ../scss/style.scss */
+/* line 301, ../scss/style.scss */
 #privacy .privacyPage h2, #privacy .termsOfUsePage h2, #termsOfUse .privacyPage h2, #termsOfUse .termsOfUsePage h2 {
   margin-bottom: 1rem;
+  font-weight: 300;
 }
-/* line 228, ../scss/style.scss */
+/* line 306, ../scss/style.scss */
 #privacy .privacyPage h3, #privacy .termsOfUsePage h3, #termsOfUse .privacyPage h3, #termsOfUse .termsOfUsePage h3 {
   font-weight: 300;
   font-size: 1.8rem;
   margin-bottom: -0.2rem;
 }
-/* line 234, ../scss/style.scss */
+/* line 312, ../scss/style.scss */
 #privacy .privacyPage p, #privacy .termsOfUsePage p, #termsOfUse .privacyPage p, #termsOfUse .termsOfUsePage p {
   line-height: 1.36rem;
 }
