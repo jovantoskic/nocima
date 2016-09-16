@@ -253,10 +253,9 @@ header {
           }
         }
       }
-
       .faColor:hover{
         background-color:rgb(58, 90, 152);
-        border:2px solid #fff;
+        border:1px solid rgb(58, 90, 152);
       }
 
       .twColor:hover{
@@ -285,6 +284,19 @@ header {
     }
   }
 }
+.newSocial{
+    @include socialBttn();
+}
+.newSocial-gp{
+    @include socialBttn(rgb(217, 82, 50));
+}
+.newSocial-in{
+    @include socialBttn(rgb(81, 127, 166));
+}
+.newSocial-tw{
+    @include socialBttn(rgb(66, 192, 251));
+}
+
 
 
 // ******************************* PRIVACY and TERMS OF USE **********************************
