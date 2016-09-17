@@ -308,3 +308,11 @@ header {
 }
 
 
+// ******************************* MEDIA QUERY **********************************
+
+@media (min-width: 320px) and (max-width: 767px) {
+   .heroImg {
+      @include imgPosition($top:7.9rem, $left:45rem);
+      width:35%;
+    }
+}
