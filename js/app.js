@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('section').height(window.innerHeight);
+	$(window).height(window.innerHeight);
 	//$('section').width(window.innerWidth);
 
 	$('.index').on('click', function(){
@@ -9,6 +9,7 @@ $(document).ready(function(){
 
 		$('.index').removeClass('colored');
 		$(this).addClass('colored');
+
 	});
 
 
