@@ -9,22 +9,22 @@
   z-index: 999;
   nav {
     padding-left:17rem;
-    padding-top:4.3rem;
+    padding-top:3rem;
 
     .logo {
       position: absolute;
-      top: 1.7rem;
+      top: 1rem;
       left: 7%;
-      width: 7rem;
-      height: 7rem;
-      background: url(../img/logo.png) 0 0 no-repeat;
+      width: 6rem;
+      height: 6rem;
+      background: url(../img/logo1.png) 0 0 no-repeat;
       text-indent: -9999px;
       }
       
       & ul{
         padding: 0;
         margin: 0;
-        margin-left:-1rem;
+        margin-left:-3.2rem;
         list-style-type: none;
 
         & li {
@@ -39,7 +39,7 @@
             
 
             &:hover{
-              opacity: 0.9;
+              color:#3d91f4;
             }
           }
         }

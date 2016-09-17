@@ -2,6 +2,15 @@ $(document).ready(function(){
 	$('section').height(window.innerHeight);
 	//$('section').width(window.innerWidth);
 
+	$('nav ul li a').on('click', function(){
+		if($(this).hasClass('colored')){
+			return false;
+		}
+
+		$('nav ul li a').removeClass('colored');
+		$(this).addClass('colored');
+	});
+
 
 
 	$('a[href^="#"]').on('click',function (e) {

@@ -25,7 +25,7 @@ header {
       .content {
         width:38rem;
         height:35rem;
-        margin-top:20rem;
+        margin-top:16.5rem;
         margin-left:7.2rem;
         padding-right:2rem;
         & h1{
@@ -66,7 +66,7 @@ header {
       height:100vh;
     
     .newContent{
-      margin-top:17rem;
+      margin-top:12rem;
       margin-left:7.2rem;
       width:35rem;
       height:28rem;
@@ -79,13 +79,15 @@ header {
 
 }
 
-// ******************************* ABOUT US **********************************
+// ******************************* MAP **********************************
 
 #map{
-  background:#2c2c2c;
+  position:relative;
+  background:url(../img/darkMap.png) 0 0 no-repeat;  
+  background-size:cover;
  
   .mapContent{
-    margin-top:17rem;
+    margin-top:12rem;
     margin-left:7.2rem;
     width:35rem;
     height:28rem;
@@ -113,7 +115,7 @@ header {
         width:36rem;
         height:20rem;
         margin-left:7.2rem;
-        margin-top:17rem;
+        margin-top:12rem;
 
         & p:last-child{
           margin-top:3rem;
@@ -161,21 +163,25 @@ header {
     .form{
       width:30rem;
       height:35rem;
-      margin-top:17rem;
+      margin-top:12rem;
       margin-left:7.2rem;
 
       input, textarea {
         display:block;
         margin-top:1rem;
+        //padding-bottom:2rem;
+        padding-left: 0.4rem;
         width:30rem;
         height:2.8rem;
         font-size:1.2rem;
         background:transparent;
         border:none;
-        border-bottom:1px solid rgba(255,255,255, 0.5);
+        border-bottom:1px solid rgba(255,255,255, 0.4);
         outline:none;
         color:#fff;
-
+        &:focus{
+          border-bottom:1px solid rgba(255,255,255, 0.9);
+        }
       }
 
       textarea{
@@ -214,45 +220,29 @@ header {
     .footer {
       width:30rem;
       height:35rem;
-      margin-top:17rem;
+      margin-top:12rem;
       margin-left:7.2rem;
 
       & h1{
-        margin-bottom: 6rem;
+        margin-bottom: 3rem;
         font-size:4rem;
         font-weight:300;
      
       }
 
-      .social-box:before {
-        content: '';
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-        margin-right: -0.25em; 
-      }
-
-      & .social-box {
-        display: inline-block;
-        width: 3.5em;
-        height: 3.5em;
-        border-radius:50%;
-        margin-right: 1.5em;
-        border:1px solid #adadad;
-        text-align: center;
-
-        & a {  
-          color: #adadad;
-          font-size: 1.2em;
-          margin: auto;
-          text-align: center;
-          vertical-align: middle;
-
-          & i:hover{
-            color:#fff;
-          }
+        .newSocial{
+           @include socialBttn();
         }
-      }
+        .newSocial-gp{
+           @include socialBttn(rgb(217, 82, 50));
+        }
+        .newSocial-in{
+           @include socialBttn(rgb(81, 127, 166));
+        }
+        .newSocial-tw{
+          @include socialBttn(rgb(66, 192, 251));
+        }
+
       .faColor:hover{
         background-color:rgb(58, 90, 152);
         border:1px solid rgb(58, 90, 152);
@@ -274,8 +264,9 @@ header {
       }
       .support{
         display:block;
-        margin-top:5.8rem;
+        margin-top:12rem;
         color:#adadad;
+      
 
         &:hover{
          color: #dadada;
@@ -284,18 +275,7 @@ header {
     }
   }
 }
-.newSocial{
-    @include socialBttn();
-}
-.newSocial-gp{
-    @include socialBttn(rgb(217, 82, 50));
-}
-.newSocial-in{
-    @include socialBttn(rgb(81, 127, 166));
-}
-.newSocial-tw{
-    @include socialBttn(rgb(66, 192, 251));
-}
+
 
 
 
