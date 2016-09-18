@@ -42,10 +42,33 @@ header {
         }
       }
   }
- 
-   .heroImg{
-      @include imgPosition;
+  .phoneWrapper{
+    position:fixed;
+    bottom: 12rem;
+    right: 1rem;
+    width: 32rem;
+    z-index: 9999999;
+    .heroImg{
+      //@include imgPosition(-10rem, -2rem);
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
     }
+    .screenImg{
+      width: 47%;
+      position: relative;
+      z-index: 1;
+      top: 5.2rem;
+      left: 5.5rem;
+      display:none;
+    }
+    .active{
+      display:block;
+    }
+  }
+
 
     .arrow{
       @include arrow;
@@ -112,12 +135,13 @@ header {
   position:relative;
   background:url(../img/aboutUs.png) 0 0 no-repeat;  
   background-size:cover;
+   min-height:110vh;
     
     .aboutFaqWrapper{
       position:absolute;
       background-color: rgba(0,0,0, 0.8);
       width:100%;
-      height:100vh;
+      min-height:115vh;
 
       .about{
         width:36rem;
@@ -203,6 +227,8 @@ header {
 
       & button{
         @include button;
+        font-size:1.2rem;
+        margin-top:2.2rem;
       }
 
       form{
@@ -273,7 +299,7 @@ header {
       .support{
         display:block;
         margin-top:12rem;
-        color:#adadad;
+        color:#3d91f4;
       
 
         &:hover{
@@ -289,10 +315,15 @@ header {
 
 // ******************************* PRIVACY and TERMS OF USE **********************************
 
+body{
+  background:url(../img/nocima.jpg) -70rem center no-repeat;
+  background-size:cover;
+}
 #privacy, #termsOfUse{
   width:100%;
-  background:#111111;
+  background:rgba(0,0,0,.8);
   overflow: hidden;
+  padding-bottom:10rem;
 
   .privacyPage, .termsOfUsePage{
     width:40rem;
@@ -318,9 +349,13 @@ header {
 
 // ******************************* MEDIA QUERY **********************************
 
-@media (min-width: 320px) and (max-width: 767px) {
-   .heroImg {
-      @include imgPosition($top:7.9rem, $left:45rem);
-      width:35%;
-    }
-}
+
+//@media (min-width: 320px) and (max-width: 767px) {
+//   .heroImg {
+//      @include imgPosition($top:7.9rem, $left:45rem);
+//      width:35%;
+//    }
+//}
+
+@import "mediaQueries/iphone";
+@import "mediaQueries/laptops";

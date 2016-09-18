@@ -14,7 +14,7 @@
     .logo {
       position: absolute;
       top: 1rem;
-      left: 7%;
+      left: 9%;
       width: 6rem;
       height: 6rem;
       background: url(../img/logo1.png) 0 0 no-repeat;
@@ -52,8 +52,8 @@
 
 @mixin imgPosition ($top:10.9rem, $left:60rem){
 	  position:fixed;
-    top:$top;
-    left:$left;
+    bottom:$top;
+    right:$left;
     width:38%;
     z-index: 9999999999999;
 }
@@ -76,10 +76,11 @@
   @include animation(bounce 2.5s infinite);
 
   position:absolute;
-  top:55rem;
-  left:49.22rem;
-  width: 2.75rem;
-  height: 2.75rem;
+  bottom:2rem;
+  left:50%;
+  margin-left:-1rem;
+  width: 2rem;
+  height: 2rem;
   background:url(../img/arrowDown.png) 0 0 no-repeat;
   background-size: contain;
 }
