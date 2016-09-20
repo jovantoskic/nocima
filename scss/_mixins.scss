@@ -460,9 +460,10 @@
           font-size:1rem;
         }
         img{
-          width:43%;
+          width:42%;
         
         }
+
       }
       .phoneWrapper {
       display: none;
@@ -476,11 +477,11 @@
   }
 
   #new{
-    background-size:cover;
+    background-size:100% 100%;
 
     .newWrapper{
       .newContent{
-        width:20rem;
+        width:18rem;
         height:20rem;
         margin-top:9rem;
         margin-left:1.3rem;
@@ -497,11 +498,11 @@
   }
 
   #map{
-    background-size:cover;
+    background-size:100% 100%;
 
     .mapWrapper{
       .mapContent{
-        width:19rem;
+        width:18rem;
         height:20rem;
         margin-top:9rem;
         margin-left:1.3rem;
@@ -518,11 +519,11 @@
   }
 
   #aboutUs{
-    background-size:cover;
+    background-size:100% 100%;
 
     .aboutFaqWrapper{
       .about{
-        width:19rem;
+        width:18rem;
         height:20rem;
         margin-top:4.8rem;
         margin-left:1.3rem;
@@ -541,7 +542,7 @@
 
       }
       .faq{
-        width:19rem;
+        width:18rem;
         height:20rem;
         margin-left:1.3rem;
         margin-top:-4rem;
@@ -567,11 +568,11 @@
   }
 
   #contact{
-    background-size:cover;
+    background-size:100% 100%;
 
     .formWrapper{
       .form{
-        width:19rem;
+        width:18rem;
         height:20rem;
         margin-top:9rem;
         margin-left:1.3rem;
@@ -605,11 +606,11 @@
   }
 
   #footer {
-    background-size:cover;
+    background-size:100% 100%;
 
     .footerWrapper {
       .footer {
-        width:19rem;
+        width:18rem;
         height:20rem;
         margin-top:9rem;
         margin-left:1.3rem;
@@ -631,6 +632,265 @@
 
         .support{
           font-size:0.85rem;
+          margin-top:8rem;
+        }
+
+        & p:last-child {
+          font-size:0.85rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+@mixin MediaLandscapeStyle(){
+    header {
+    height:4rem;
+
+    nav {
+      margin-left:4rem;
+     
+
+      .logo {
+        display:none;
+      } 
+
+      img {
+        display:inline-block;
+        margin-top:-2.7rem;
+        width:10%;
+        height:10%;
+
+      }
+
+      ul{
+        width:90%;
+        margin-top:-2.5rem;
+        margin-left:4.3rem;
+
+        li {
+            line-height: 0.5rem;
+          & a {
+              padding:0.6rem;
+              font-size:0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  #nocima {
+    background-size:cover;
+ 
+    .contentWrapper{
+
+      .content {
+        width:20rem;
+        height:10rem;
+        margin-top:8.5rem;
+        margin-left:4rem;
+        //padding-right:1rem;
+        & h1{
+          margin-bottom:1rem;
+          font-size:2.4rem;
+          font-weight:300;
+          line-height:3rem;
+          text-transform:uppercase;
+        }
+
+        & h3{
+          font-weight:300;
+          font-size:1rem;
+        }
+        img{
+          width:43%;
+        
+        }
+      }
+      .phoneWrapper {
+      display: none;
+      }
+    } 
+    .arrow {
+      width:1.2rem;
+      height:1.2rem;
+      bottom:0.5rem;
+    }
+  }
+
+  #new{
+    background-size:cover;
+
+    .newWrapper{
+      .newContent{
+        width:40rem;
+        height:20rem;
+        margin-top:9rem;
+        margin-left:4rem;
+        h2{
+          font-size:1.65rem;
+          margin-bottom:1.1rem;
+          line-height:2.4rem;
+        }
+        p{
+          font-size:0.85rem;
+        }
+        p:last-child{
+          margin-top:-0.4rem;
+        }
+      }
+    }
+  }
+
+  #map{
+    background-size:cover;
+
+    .mapWrapper{
+      .mapContent{
+        width:40rem;
+        height:20rem;
+        margin-top:9rem;
+        margin-left:4rem;
+        h2{
+          font-size:1.65rem;
+          margin-bottom:1.1rem;
+          line-height:2.4rem;        
+        }
+        p{
+          font-size:0.85rem;
+        }
+
+        p:nth-child(3), p:last-child{
+          margin-top:-0.4rem;
+        }
+      }
+    }
+  }
+
+  #aboutUs{
+    background-size:cover;
+
+    .aboutFaqWrapper{
+      .about{
+        width:40rem;
+        height:20rem;
+        margin-top:4.25rem;
+        margin-left:3.9rem;
+        h2{
+          font-size:1.65rem;
+          margin-bottom:0.7rem;
+          line-height:2.4rem; 
+        }
+
+         p:nth-child(3){
+          margin-top:-0.3rem;
+        }
+
+        p{
+          font-size:0.85rem;
+        }
+        p:last-child{
+          margin-top:-0.3rem;
+
+        }
+
+      }
+      .faq {
+        width:40rem;
+        height:20rem;
+        margin-left:3.9rem;
+        margin-top:-9.9rem;
+        h3 {
+          margin-bottom:-0.5rem;
+          font-weight:300;
+          font-size:1.25rem;
+        }
+        p{
+          font-size:0.9rem;
+        }
+         & p:nth-child(3){
+          margin-top:-0.7rem;
+        
+        }
+
+        & p:nth-child(4){
+          margin-top:0.9rem;
+          opacity: 1;
+        }
+
+        & p:last-child {
+          margin-top:-0.8rem;
+        }
+      }
+    }
+  }
+
+  #contact{
+    background-size:cover;
+
+    .formWrapper{
+      .form{
+        width:19rem;
+        height:20rem;
+        margin-top:8rem;
+        margin-left:4rem;
+
+        h2{
+          font-size:1.8rem;
+          margin-bottom:0.5rem;
+        }
+
+        input, textarea {
+          width:14rem;
+          height:1rem;
+          font-size:0.75rem;
+      }
+
+        textarea{
+          height:2.8rem;
+          width:18rem;
+        }
+
+        & button{
+          @include button;
+          width:8rem;
+          height:1.8rem;
+          font-size:0.65rem;
+          margin-top:1.8rem;
+        }
+      }
+    }
+  }
+
+  #footer {
+    background-size:cover;
+
+    .footerWrapper {
+      .footer {
+        width:19rem;
+        height:20rem;
+        margin-top:9rem;
+        margin-left:4rem;
+
+        & h1 {
+          margin-bottom: 2rem;
+          font-size:2.4rem;
+          font-weight:300;
+     
+        }
+
+        .newSocial,.newSocial-in {
+           @include socialBttn();
+           width:2.7rem;
+           padding-top:0.7rem;
+           padding-bottom:0.65rem;
+           font-size:0.7rem;
+        }
+
+        .support{
+          font-size:0.75rem;
           margin-top:8rem;
         }
 

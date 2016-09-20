@@ -30,7 +30,7 @@ and (min-device-width: 320px)
 and (max-device-width: 480px)
 and (orientation: landscape) {
 
-  @include MediaStyle();
+  @include MediaLandscapeStyle();
   
 }
 
@@ -64,7 +64,9 @@ and (min-device-width: 320px)
 and (max-device-width: 568px)
 and (orientation: landscape) {
 
-  @include MediaIPhone5Style();
+  // @include MediaIPhone5Style();
+
+  @include MediaLandscapeStyle();
   
 }
 
@@ -96,7 +98,7 @@ and (min-device-width: 375px)
 and (max-device-width: 667px)
 and (orientation: landscape) {
 
-  @include MediaStyle();
+  @include MediaLandscapeStyle();
   
 }
 
@@ -127,6 +129,16 @@ and (min-device-width: 414px)
 and (max-device-width: 736px)
 and (orientation: landscape) {
 
-  @include MediaStyle();
+  @include MediaLandscapeStyle();
+  
+}
+
+
+@media only screen
+and (min-device-width: 640px)
+and (max-device-width: 360px)
+and (orientation: landscape) {
+
+  @include MediaLandscapeStyle();
   
 }
