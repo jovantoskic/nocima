@@ -2,6 +2,7 @@
 
 @media only screen
 and (max-width: 480px) {
+
   @include MediaStyle();
 }
 
@@ -18,6 +19,7 @@ and (max-device-width: 480px) // ako je manje ili jednako 480
 and (min-device-width: 320px)
 and (max-device-width: 480px)
 and (orientation: portrait) {
+
   @include MediaStyle();
   
 }
@@ -27,6 +29,7 @@ and (orientation: portrait) {
 and (min-device-width: 320px)
 and (max-device-width: 480px)
 and (orientation: landscape) {
+
   @include MediaStyle();
   
 }
@@ -37,7 +40,10 @@ and (orientation: landscape) {
 @media only screen
 and (min-device-width: 320px)
 and (max-device-width: 568px) {
-  @include MediaStyle();
+
+  @include MediaIPhone5Style();
+
+
   
 }
 
@@ -48,7 +54,7 @@ and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
 
-  @include MediaStyle();
+  @include MediaIPhone5Style();
   
 }
 
@@ -58,7 +64,7 @@ and (min-device-width: 320px)
 and (max-device-width: 568px)
 and (orientation: landscape) {
 
-  @include MediaStyle();
+  @include MediaIPhone5Style();
   
 }
 
@@ -120,7 +126,7 @@ and (orientation: portrait) {
 and (min-device-width: 414px)
 and (max-device-width: 736px)
 and (orientation: landscape) {
-  
+
   @include MediaStyle();
   
 }
