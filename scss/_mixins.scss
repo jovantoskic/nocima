@@ -645,7 +645,7 @@
 
 
 
-@mixin MediaPortraitStyle(){
+@mixin MediaLandscapeStyle(){
     header {
     height:4rem;
 
@@ -682,19 +682,19 @@
   }
 
   #nocima {
-    background-size:100% 100%;
+    background-size:cover;
  
     .contentWrapper{
 
       .content {
-        width:30rem;
+        width:20rem;
         height:10rem;
-        margin-top:5.5rem;
-        margin-left:1.3rem;
+        margin-top:8.5rem;
+        margin-left:4rem;
         //padding-right:1rem;
         & h1{
           margin-bottom:1rem;
-          font-size:2.5rem;
+          font-size:2.4rem;
           font-weight:300;
           line-height:3rem;
           text-transform:uppercase;
@@ -725,17 +725,20 @@
 
     .newWrapper{
       .newContent{
-        width:20rem;
+        width:40rem;
         height:20rem;
         margin-top:9rem;
-        margin-left:1.3rem;
+        margin-left:4rem;
         h2{
-          font-size:1.8rem;
-          margin-bottom:2rem;
+          font-size:1.65rem;
+          margin-bottom:1.1rem;
           line-height:2.4rem;
         }
         p{
           font-size:0.85rem;
+        }
+        p:last-child{
+          margin-top:-0.4rem;
         }
       }
     }
@@ -746,17 +749,21 @@
 
     .mapWrapper{
       .mapContent{
-        width:19rem;
+        width:40rem;
         height:20rem;
         margin-top:9rem;
-        margin-left:1.3rem;
+        margin-left:4rem;
         h2{
-          font-size:1.8rem;
-          margin-bottom:2rem;
+          font-size:1.65rem;
+          margin-bottom:1.1rem;
           line-height:2.4rem;        
         }
         p{
           font-size:0.85rem;
+        }
+
+        p:nth-child(3), p:last-child{
+          margin-top:-0.4rem;
         }
       }
     }
@@ -767,36 +774,45 @@
 
     .aboutFaqWrapper{
       .about{
-        width:19rem;
+        width:40rem;
         height:20rem;
-        margin-top:4.8rem;
-        margin-left:1.3rem;
+        margin-top:4.25rem;
+        margin-left:3.9rem;
         h2{
-          font-size:1.8rem;
-          margin-bottom:2rem;
+          font-size:1.65rem;
+          margin-bottom:0.7rem;
           line-height:2.4rem; 
         }
+
+         p:nth-child(3){
+          margin-top:-0.3rem;
+        }
+
         p{
           font-size:0.85rem;
         }
         p:last-child{
-          margin-top:1.8rem;
+          margin-top:-0.3rem;
 
         }
 
       }
-      .faq{
-        width:19rem;
+      .faq {
+        width:40rem;
         height:20rem;
-        margin-left:1.3rem;
-        margin-top:-4rem;
-        h3{
+        margin-left:3.9rem;
+        margin-top:-9.9rem;
+        h3 {
           margin-bottom:-0.5rem;
           font-weight:300;
-          font-size:1.3rem;
+          font-size:1.25rem;
         }
         p{
           font-size:0.9rem;
+        }
+         & p:nth-child(3){
+          margin-top:-0.7rem;
+        
         }
 
         & p:nth-child(4){
@@ -818,13 +834,12 @@
       .form{
         width:19rem;
         height:20rem;
-        margin-top:9rem;
-        margin-left:1.3rem;
+        margin-top:8rem;
+        margin-left:4rem;
 
         h2{
           font-size:1.8rem;
-          margin-bottom:2rem;
-          line-height:2.4rem;
+          margin-bottom:0.5rem;
         }
 
         input, textarea {
@@ -834,16 +849,16 @@
       }
 
         textarea{
-          height:3.5rem;
+          height:2.8rem;
           width:18rem;
         }
 
         & button{
           @include button;
-          width:10rem;
-          height:2.3rem;
-          font-size:0.7rem;
-          margin-top:2.2rem;
+          width:8rem;
+          height:1.8rem;
+          font-size:0.65rem;
+          margin-top:1.8rem;
         }
       }
     }
@@ -857,11 +872,11 @@
         width:19rem;
         height:20rem;
         margin-top:9rem;
-        margin-left:1.3rem;
+        margin-left:4rem;
 
         & h1 {
           margin-bottom: 2rem;
-          font-size:2.5rem;
+          font-size:2.4rem;
           font-weight:300;
      
         }
@@ -875,7 +890,7 @@
         }
 
         .support{
-          font-size:0.85rem;
+          font-size:0.75rem;
           margin-top:8rem;
         }
 
