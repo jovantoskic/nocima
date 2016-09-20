@@ -318,47 +318,40 @@ header {
 
 // ******************************* PRIVACY and TERMS OF USE **********************************
 
-body{
+body {
   background:url(../img/nocima.jpg) -70rem center no-repeat;
   background-size:cover;
-}
-#privacy, #termsOfUse{
-  width:100%;
-  background:rgba(0,0,0,.8);
-  overflow: hidden;
-  padding-bottom:10rem;
 
-  .privacyPage, .termsOfUsePage{
-    width:40rem;
-    margin:15rem 0 2rem 7.2rem;
+  #privacy, #termsOfUse{
+    width:100%;
+    background:rgba(0,0,0,.8);
+    overflow: hidden;
+    padding-bottom:10rem;
 
-    & h2{
-      margin-bottom:1rem;
-      font-weight:300;
-    }
+    .privacyPage, .termsOfUsePage{
+      width:40rem;
+      margin:15rem 0 2rem 7.2rem;
 
-    & h3{
-      font-weight:300;
-      font-size:1.8rem;
-      margin-bottom:-0.2rem;
-    }
+      & h2{
+        margin-bottom:1rem;
+        font-weight:300;
+      }
 
-    & p {
-      line-height:1.36rem;
+      & h3{
+        font-weight:300;
+        font-size:1.8rem;
+        margin-bottom:-0.2rem;
+      }
+
+      & p {
+        line-height:1.36rem;
+      }
     }
   }
 }
 
 
 // ******************************* MEDIA QUERY **********************************
-
-
-//@media (min-width: 320px) and (max-width: 767px) {
-//   .heroImg {
-//      @include imgPosition($top:7.9rem, $left:45rem);
-//      width:35%;
-//    }
-//}
 
 @import "mediaQueries/iphone";
 @import "mediaQueries/laptops";
