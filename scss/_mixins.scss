@@ -8,13 +8,13 @@
   background:transparent;
   z-index: 999;
   nav {
-    padding-left:17rem;
+    margin-left:-3.3rem;
     padding-top:3rem;
 
     .logo {
       position: absolute;
       top: 1rem;
-      left: 9%;
+      left: 7%;
       width: 6rem;
       height: 6rem;
       background: url(../img/logo1.png) 0 0 no-repeat;
@@ -122,4 +122,6 @@
         color:white;
     }
 }
+
+// ***************** MEDIA QUERY MIXINS *********************
 

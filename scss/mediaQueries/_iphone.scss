@@ -2,14 +2,239 @@
 
 @media only screen
 and (max-width: 480px) {
-  .phoneWrapper {
-    display: none;
+  header{
+    height:4rem;
+    nav{
+      margin-left:1.3rem;
+      padding-top:1rem;
+      .logo{
+        top:0.5rem;
+
+      }
+
+      ul{
+        margin-left:-1.2rem;
+
+        & a{
+          padding:0.5rem;
+          font-size:0.8rem;
+        }
+      }
+    }
+  }
+
+  #nocima{
+    background-size:100% 100%;
+ 
+    .contentWrapper{
+
+      .content {
+        width:20rem;
+        height:20rem;
+        margin-top:14.5rem;
+        margin-left:1.7rem;
+        //padding-right:1rem;
+        & h1{
+          margin-bottom:1rem;
+          font-size:3rem;
+          font-weight:300;
+          line-height:3rem;
+          text-transform:uppercase;
+        }
+
+        & h3{
+          font-weight:300;
+          font-size:1.1rem;
+        }
+        img{
+          width:48%;
+        
+        }
+      }
+      .phoneWrapper {
+      display: none;
+      }
+    } 
+  }
+
+  #new{
+    background-size:100% 100%;
+
+    .newWrapper{
+      .newContent{
+        width:20rem;
+        height:20rem;
+        margin-top:12.5rem;
+        margin-left:1.7rem;
+        h2{
+          font-size:2rem;
+          margin-bottom:2rem;
+          line-height:2.5rem;
+        }
+        p{
+          font-size:1rem;
+        }
+      }
+    }
+  }
+
+  #map{
+    background-size:100% 100%;
+
+    .mapWrapper{
+      .mapContent{
+        width:20rem;
+        height:20rem;
+        margin-top:12.5rem;
+        margin-left:1.7rem;
+        h2{
+          font-size:2rem;
+          margin-bottom:1rem;
+          line-height:2.5rem;         
+        }
+        p{
+          font-size:1rem;
+        }
+      }
+    }
+  }
+
+  #aboutUs{
+    background-size:100% 100%;
+
+    .aboutFaqWrapper{
+      .about{
+        width:20rem;
+        height:20rem;
+        margin-top:7.5rem;
+        margin-left:1.7rem;
+        h2{
+          font-size:2rem;
+          margin-bottom:1rem;
+          line-height:2.5rem; 
+        }
+        p{
+          font-size:1rem;
+        }
+        p:last-child{
+          margin-top:2rem;
+
+        }
+
+      }
+      .faq{
+        width:20rem;
+        height:20rem;
+        margin-top:-2rem;
+        margin-left:1.7rem;
+        h3{
+          margin-bottom:-0.8rem;
+          font-weight:300;
+          font-size:1.1rem;
+        }
+        p{
+          font-size:1rem;
+        }
+
+        & p:nth-child(4){
+          margin-top:1.5rem;
+          opacity: 1;
+        }
+
+        & p:last-child {
+          margin-top:-0.8rem;
+        }
+      }
+    }
+  }
+
+  #contact{
+    background-size:100% 100%;
+
+    .formWrapper{
+      .form{
+        width:20rem;
+        height:25rem;
+        margin-top:12rem;
+        margin-left:1.7rem;
+
+        h2{
+          font-size:2rem;
+          margin-bottom:1rem;
+          line-height:2.5rem;
+        }
+
+        input, textarea {
+          display:block;
+          margin-top:1rem;
+          //padding-bottom:2rem;
+          padding-left: 0.4rem;
+          width:17rem;
+          height:1.8rem;
+          font-size:0.9rem;
+          background:transparent;
+          border:none;
+          border-bottom:1px solid rgba(255,255,255, 0.4);
+          outline:none;
+          color:#fff;
+      }
+
+        textarea{
+          height:4rem;
+          width:20rem;
+        }
+
+        & button{
+          @include button;
+          width:12rem;
+          height:2.8rem;
+          margin-top:2.8rem;
+          font-size:1rem;
+          margin-top:2.2rem;
+        }
+
+        form{
+          padding-top:1rem;
+        }
+      }
+    }
+  }
+
+  #footer{
+    background-size:100% 100%;
+
+    .footerWrapper{
+      .footer{
+        width:20rem;
+        height:20rem;
+        margin-top:13.5rem;
+        margin-left:1.7rem;
+
+        & h1{
+          margin-bottom: 3rem;
+          font-size:4rem;
+          font-weight:300;
+     
+        }
+
+        .newSocial,.newSocial-in{
+           //@include socialBttnMedia();
+        }
+
+        .support{
+          display:block;
+          margin-top:12rem;
+          color:#3d91f4;
+        }
+      }
+    }
   }
 }
 
 @media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px) {
+and (min-device-width: 320px)// ako je vece ili jednako 320
+and (max-device-width: 480px) // ako je manje ili jednako 480
+{
   .phoneWrapper {
     display: none;
   }

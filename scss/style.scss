@@ -3,6 +3,9 @@
 @import "mixins";
 
 
+
+
+
 // ******************************* HEADER **********************************
 header {
 @include headerStyle;
@@ -267,30 +270,30 @@ header {
         .newSocial{
            @include socialBttn();
         }
-        .newSocial-gp{
-           @include socialBttn(rgb(217, 82, 50));
-        }
+        // .newSocial-gp{
+        //    @include socialBttn(rgb(217, 82, 50));
+        // }
         .newSocial-in{
            @include socialBttn(rgb(81, 127, 166));
         }
-        .newSocial-tw{
-          @include socialBttn(rgb(66, 192, 251));
-        }
+        // .newSocial-tw{
+        //   @include socialBttn(rgb(66, 192, 251));
+        // }
 
       .faColor:hover{
         background-color:rgb(58, 90, 152);
         border:1px solid rgb(58, 90, 152);
       }
 
-      .twColor:hover{
-        background-color:rgb(66, 192, 251);
-        border:2px solid #fff;
-      }
+      // .twColor:hover{
+      //   background-color:rgb(66, 192, 251);
+      //   border:2px solid #fff;
+      // }
 
-      .gogColor:hover{
-        background-color:rgb(217, 82, 50);
-        border:2px solid #fff;
-      }
+      // .gogColor:hover{
+      //   background-color:rgb(217, 82, 50);
+      //   border:2px solid #fff;
+      // }
 
       .insColor:hover{
         background-color:rgb(81, 127, 166);

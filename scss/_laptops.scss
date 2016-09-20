@@ -1,0 +1,67 @@
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  nav {
+    padding-left: 24rem;
+  }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  padding-left: 24rem;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  #nocima .phoneWrapper {
+    bottom: 8rem;
+    right: -2rem;
+    width: 22rem;
+  }
+  .screenImg {
+    top: 3.2rem !important;
+    left: 3.7rem !important;
+  }
+  #nocima {
+    .contentWrapper {
+      .content {
+        width: 40%;
+        height: 35rem;
+        margin-top: 16.5rem;
+        margin-left: 4.2rem;
+        h1 {
+          font-size: 3rem;
+          line-height: 3.3rem;
+        }
+        h3 {
+          font-size: 1.5rem;
+          margin-top: 0;
+        }
+        a {
+          float: left;
+          width: 40%;
+          margin-right: 5%;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+  #new{
+    .newWrapper .content{
+      margin-left:4.2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .navigation {
+    padding-left: 20rem;
+  }
+  #nocima .phoneWrapper {
+    bottom: 19rem;
+    right: 10rem;
+  }
+  #termsOfUse .termsOfUsePage, #privacy .privacyPage {
+    width: 45%;
+  }
+}
+
+
