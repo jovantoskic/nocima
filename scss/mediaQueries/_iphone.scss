@@ -96,7 +96,7 @@ and (min-device-width: 375px)
 and (max-device-width: 667px)
 and (orientation: landscape) {
 
-  @include MediaStyle();
+  @include MediaPortraitStyle();
   
 }
 
@@ -127,6 +127,6 @@ and (min-device-width: 414px)
 and (max-device-width: 736px)
 and (orientation: landscape) {
 
-  @include MediaStyle();
+  @include MediaPortraitStyle();
   
 }

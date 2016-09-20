@@ -460,6 +460,251 @@
           font-size:1rem;
         }
         img{
+          width:42%;
+        
+        }
+
+      }
+      .phoneWrapper {
+      display: none;
+      }
+    } 
+    .arrow {
+      width:1.2rem;
+      height:1.2rem;
+      bottom:0.5rem;
+    }
+  }
+
+  #new{
+    background-size:100% 100%;
+
+    .newWrapper{
+      .newContent{
+        width:18rem;
+        height:20rem;
+        margin-top:9rem;
+        margin-left:1.3rem;
+        h2{
+          font-size:1.8rem;
+          margin-bottom:2rem;
+          line-height:2.4rem;
+        }
+        p{
+          font-size:0.85rem;
+        }
+      }
+    }
+  }
+
+  #map{
+    background-size:100% 100%;
+
+    .mapWrapper{
+      .mapContent{
+        width:18rem;
+        height:20rem;
+        margin-top:9rem;
+        margin-left:1.3rem;
+        h2{
+          font-size:1.8rem;
+          margin-bottom:2rem;
+          line-height:2.4rem;        
+        }
+        p{
+          font-size:0.85rem;
+        }
+      }
+    }
+  }
+
+  #aboutUs{
+    background-size:100% 100%;
+
+    .aboutFaqWrapper{
+      .about{
+        width:18rem;
+        height:20rem;
+        margin-top:4.8rem;
+        margin-left:1.3rem;
+        h2{
+          font-size:1.8rem;
+          margin-bottom:2rem;
+          line-height:2.4rem; 
+        }
+        p{
+          font-size:0.85rem;
+        }
+        p:last-child{
+          margin-top:1.8rem;
+
+        }
+
+      }
+      .faq{
+        width:18rem;
+        height:20rem;
+        margin-left:1.3rem;
+        margin-top:-4rem;
+        h3{
+          margin-bottom:-0.5rem;
+          font-weight:300;
+          font-size:1.3rem;
+        }
+        p{
+          font-size:0.9rem;
+        }
+
+        & p:nth-child(4){
+          margin-top:0.9rem;
+          opacity: 1;
+        }
+
+        & p:last-child {
+          margin-top:-0.8rem;
+        }
+      }
+    }
+  }
+
+  #contact{
+    background-size:100% 100%;
+
+    .formWrapper{
+      .form{
+        width:18rem;
+        height:20rem;
+        margin-top:9rem;
+        margin-left:1.3rem;
+
+        h2{
+          font-size:1.8rem;
+          margin-bottom:2rem;
+          line-height:2.4rem;
+        }
+
+        input, textarea {
+          width:14rem;
+          height:1rem;
+          font-size:0.75rem;
+      }
+
+        textarea{
+          height:3.5rem;
+          width:18rem;
+        }
+
+        & button{
+          @include button;
+          width:10rem;
+          height:2.3rem;
+          font-size:0.7rem;
+          margin-top:2.2rem;
+        }
+      }
+    }
+  }
+
+  #footer {
+    background-size:100% 100%;
+
+    .footerWrapper {
+      .footer {
+        width:18rem;
+        height:20rem;
+        margin-top:9rem;
+        margin-left:1.3rem;
+
+        & h1 {
+          margin-bottom: 2rem;
+          font-size:2.5rem;
+          font-weight:300;
+     
+        }
+
+        .newSocial,.newSocial-in {
+           @include socialBttn();
+           width:2.7rem;
+           padding-top:0.7rem;
+           padding-bottom:0.65rem;
+           font-size:0.7rem;
+        }
+
+        .support{
+          font-size:0.85rem;
+          margin-top:8rem;
+        }
+
+        & p:last-child {
+          font-size:0.85rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+@mixin MediaPortraitStyle(){
+    header {
+    height:4rem;
+
+    nav {
+      margin-left:4rem;
+     
+
+      .logo {
+        display:none;
+      } 
+
+      img {
+        display:inline-block;
+        margin-top:-2.7rem;
+        width:10%;
+        height:10%;
+
+      }
+
+      ul{
+        width:90%;
+        margin-top:-2.5rem;
+        margin-left:4.3rem;
+
+        li {
+            line-height: 0.5rem;
+          & a {
+              padding:0.6rem;
+              font-size:0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  #nocima {
+    background-size:100% 100%;
+ 
+    .contentWrapper{
+
+      .content {
+        width:30rem;
+        height:10rem;
+        margin-top:5.5rem;
+        margin-left:1.3rem;
+        //padding-right:1rem;
+        & h1{
+          margin-bottom:1rem;
+          font-size:2.5rem;
+          font-weight:300;
+          line-height:3rem;
+          text-transform:uppercase;
+        }
+
+        & h3{
+          font-weight:300;
+          font-size:1rem;
+        }
+        img{
           width:43%;
         
         }
