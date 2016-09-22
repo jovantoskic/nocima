@@ -51,16 +51,16 @@ header {
     right: 1rem;
     width: 32rem;
     z-index: 9999999;
-    .heroImg{
+    .heroImg{   //telefon
       //@include imgPosition(-10rem, -2rem);
-      width: 100%;
+      width: 115%;
       position: absolute;
       top: 0;
       left: 0;
       z-index: 2;
     }
     .screenImg{
-      width: 47%;
+      width: 55%;
       position: relative;
       z-index: 1;
       top: 5.2rem;
@@ -73,7 +73,7 @@ header {
   }
 
 
-    .arrow{
+    .arrow {
       @include arrow;
     }
 }

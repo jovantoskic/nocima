@@ -33,6 +33,7 @@ $(document).ready(function(){
 		$('.phoneWrapper img').removeClass('active');
 		$('.phoneWrapper .'+imageName).addClass('active');
 	};
+	
 	$(window).on('scroll', function(){
 
 		var bounce = $("#bouncedArrow");
@@ -44,7 +45,7 @@ $(document).ready(function(){
   		}
 
 		var scrollProgress = window.pageYOffset;
-		// console.log(scrollProgress);
+		 console.log(scrollProgress);
 
 		// var p = $( "p:first" );
 		// $( "p:last" ).text( "scrollTop:" + p.scrollTop() );
@@ -54,7 +55,7 @@ $(document).ready(function(){
 		var contact = $('#contact').offset().top- (window.innerHeight/2);
 		var footer = $('#footer').offset().top- (window.innerHeight/2);
 	
-		console.log(scrollProgress);
+		//console.log(scrollProgress);
 		
 		if(scrollProgress < newW){
 			activateImg('homeImg');
