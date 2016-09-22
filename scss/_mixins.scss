@@ -400,6 +400,14 @@
 }
 
 
+
+
+
+
+
+
+
+
 @mixin MediaIPhone5Style(){
     header {
     height:4rem;
@@ -477,7 +485,7 @@
   }
 
   #new{
-    background-size:100% 100%;
+    background-size:cover;
 
     .newWrapper{
       .newContent{
@@ -519,7 +527,7 @@
   }
 
   #aboutUs{
-    background-size:100% 100%;
+    background-size:cover;
 
     .aboutFaqWrapper{
       .about{
@@ -568,7 +576,7 @@
   }
 
   #contact{
-    background-size:100% 100%;
+    background-size:cover;
 
     .formWrapper{
       .form{
@@ -606,7 +614,7 @@
   }
 
   #footer {
-    background-size:100% 100%;
+    background-size:cover;
 
     .footerWrapper {
       .footer {
@@ -641,7 +649,43 @@
       }
     }
   }
+
+    body {
+    background-position:center;
+    background-size:cover;
+
+    #privacy, #termsOfUse{
+      padding-bottom:7rem;
+
+      .privacyPage, .termsOfUsePage{
+        width:20rem;
+        margin-top:10rem;
+        margin-bottom:1.7rem;
+        margin-left:1.7rem;
+
+        & h2{
+          margin-bottom:1rem;
+          font-weight:300;
+          font-size:2rem;
+        }
+
+        & h3{
+          font-weight:300;
+          font-size:1.3rem;
+          margin-bottom:-0.2rem;
+        }
+
+        & p {
+            line-height:1.36rem;
+            font-size:1rem;
+        }
+      }
+    }
+  }
 }
+
+
+
 
 
 
@@ -693,15 +737,15 @@
         margin-left:4rem;
         //padding-right:1rem;
         & h1{
-          margin-bottom:1rem;
+          //margin-bottom:1rem;
           font-size:2.4rem;
-          font-weight:300;
+          //font-weight:300;
           line-height:3rem;
-          text-transform:uppercase;
+          //text-transform:uppercase;
         }
 
         & h3{
-          font-weight:300;
+          //font-weight:300;
           font-size:1rem;
         }
         img{
@@ -775,7 +819,7 @@
     .aboutFaqWrapper{
       .about{
         width:40rem;
-        height:20rem;
+        //height:20rem;
         margin-top:4.25rem;
         margin-left:3.9rem;
         h2{
@@ -799,12 +843,12 @@
       }
       .faq {
         width:40rem;
-        height:20rem;
+        //height:20rem;
         margin-left:3.9rem;
         margin-top:-9.9rem;
         h3 {
           margin-bottom:-0.5rem;
-          font-weight:300;
+          //font-weight:300;
           font-size:1.25rem;
         }
         p{
@@ -817,12 +861,12 @@
 
         & p:nth-child(4){
           margin-top:0.9rem;
-          opacity: 1;
+          //opacity: 1;
         }
 
-        & p:last-child {
-          margin-top:-0.8rem;
-        }
+        // & p:last-child {
+        //   margin-top:-0.8rem;
+        // }
       }
     }
   }
@@ -877,7 +921,7 @@
         & h1 {
           margin-bottom: 2rem;
           font-size:2.4rem;
-          font-weight:300;
+          //font-weight:300;
      
         }
 
@@ -896,6 +940,39 @@
 
         & p:last-child {
           font-size:0.85rem;
+        }
+      }
+    }
+  }
+
+    body {
+    background-position:center;
+    background-size:cover;
+
+    #privacy, #termsOfUse{
+      padding-bottom:7rem;
+
+      .privacyPage, .termsOfUsePage{
+        width:20rem;
+        margin-top:10rem;
+        margin-bottom:1.7rem;
+        margin-left:1.7rem;
+
+        & h2{
+          //margin-bottom:1rem;
+          //font-weight:300;
+          font-size:2rem;
+        }
+
+        & h3{
+          //font-weight:300;
+          font-size:1.3rem;
+          margin-bottom:-0.2rem;
+        }
+
+        & p {
+            line-height:1.36rem;
+            font-size:1rem;
         }
       }
     }

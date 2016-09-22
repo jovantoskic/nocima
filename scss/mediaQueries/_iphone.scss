@@ -134,11 +134,84 @@ and (orientation: landscape) {
 }
 
 
+
+
+@media only screen
+and (max-device-width: 640px)
+and (min-device-width: 360px)
+and (orientation: portrait) {
+
+  @include MediaIPhone5Style();
+
+  header {
+    ul{
+        margin-left:2.8rem !important; 
+    }
+    a{
+      font-size:0.598rem !important;
+    }
+  } 
+  body{
+    .privacyPage, .termsOfUsePage{
+      margin-top: 7rem !important;
+      h2{font-size: 1.5rem !important;}
+      h3{font-size: 1.1rem !important;}
+      p{font-size: 0.78rem !important;}
+    }
+    .termsOfUsePage{
+      ul li{
+        font-size: 0.78rem;
+      }
+    }
+  } 
+}
+
+
+
+
 @media only screen
 and (min-device-width: 360px)
 and (max-device-width: 640px)
 and (orientation: landscape) {
 
   @include MediaLandscapeStyle();
-  
+  .content{
+    margin-top: 7.1rem !important;
+    h1{
+      margin-bottom: 0.8rem !important;
+      font-size: 2.2rem !important;
+      line-height: 2.4rem !important;
+    }
+    h3{
+      font-size:0.88rem !important;
+    }
+    img{width:38% !important;}
+  }
+  .newContent{
+    width:35rem !important;
+    h2{
+      font-size: 1.38rem !important;
+      margin-bottom: 0 !important;
+    }
+    p{font-size: 0.8rem !important;}
+  }
+  .mapContent{
+    margin-top: 7.1rem !important;
+    width:35rem !important;
+    h2{font-size: 1.38rem !important;}
+    p{font-size: 0.8rem !important;}
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
